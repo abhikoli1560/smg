@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangameshwar College Admission Receipt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .download-link {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="receipt-content">
+    <h2>Sangameshwar College Admission Receipt</h2>
+
+    <p><strong>Date:</strong> 13/09/2025</p>
+    <p><strong>Student Name:</strong> Mr. Kodagi sushant Santosh</p>
+    <p><strong>Admission No.:</strong> 71</p>
+    <p><strong>Category:</strong> Open</p>
+    <p><strong>Section:</strong> Bcom</p>
+
+    <table>
+        <tr>
+            <th>Fee Description</th>
+            <th>Amount (₹)</th>
+        </tr>
+        <tr><td>P.S.A. Fund</td><td>70</td></tr>
+        <tr><td>College Development Fund</td><td>15</td></tr>
+        <tr><td>Journal</td><td>105</td></tr>
+        <tr><td>Cycle Stand</td><td>500</td></tr>
+        <tr><td>Insurance</td><td>100</td></tr>
+        <tr><td>Eligibility Fee</td><td>118</td></tr>
+        <tr><td>Registration Fee</td><td>100</td></tr>
+        <tr><td>Stationary Fee</td><td>70</td></tr>
+        <tr><td>E-Suvidha + GST</td><td>105</td></tr>
+        <tr><td>Elgib Form Fee</td><td>100</td></tr>
+        <tr><td>Fuel Fee</td><td>10</td></tr>
+        <tr><td>Alumni Association</td><td>70</td></tr>
+        <tr><td>Internet Charges</td><td>70</td></tr>
+        <tr><td>Internal Exam</td><td>205</td></tr>
+        <tr><td>Uni. Exam Fee</td><td>150</td></tr>
+        <tr><td>Environment Fee</td><td>2520</td></tr>
+        <tr><td>Democracy Fee</td><td>340</td></tr>
+        <tr>
+            <th>Total</th>
+            <th>3023</th>
+        </tr>
+    </table>
+
+    <p><strong>Payment Method:</strong> Card Swipe via HDFC Bank, Solapur</p>
+    <p><strong>Transaction ID:</strong> 415008611243</p>
+
+    <p><em>Stamp: Sangameshwar College Library, Solapur</em></p>
+</div>
+
+<div class="download-link">
+    <a href="#" onclick="downloadReceipt()">Download Receipt (PDF)</a>
+</div>
+
+<script>
+    function downloadReceipt() {
+        const receiptContent = document.getElementById('receipt-content').innerHTML;
+        const blob = new Blob([receiptContent], { type: 'application/pdf' });
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = 'SangameshwarCollegeReceipt.pdf';
+        link.click();
+    }
+</script>
+
+</body>
+</html>
